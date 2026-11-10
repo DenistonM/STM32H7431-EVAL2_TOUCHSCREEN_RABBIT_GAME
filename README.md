@@ -114,18 +114,6 @@ Only `game.c` and `game.h` hold the game. The rest comes from ST's BSP example, 
 | Taps land in the wrong place | Check `gTS.Orientation` in `Game_Init()`. The game uses `TS_SWAP_NONE`, the same as ST's touchscreen demo. |
 | Taps are missed or double-counted | Adjust `TAP_GRACE_MS` and `gTS.Accuracy` in `game.c`. |
 
-## Possible improvements
-
-- Pause using the TAMPER button (already initialised in `main.c`)
-- Sound effects using the board's audio codec
-- Save the best score to flash
-- Bonus or "bad" characters that cost points
-- Selectable game length or difficulty
-
-## Licence and credits
-
-- Game code (`game.c`, `game.h`): add your own licence here (for example MIT).
-- Files from STMicroelectronics (HAL, BSP, CMSIS, startup, system and example files) keep their original licences. See the headers in each file.
 
 ## Author
 
